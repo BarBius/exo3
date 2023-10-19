@@ -12,13 +12,15 @@ class Slider {
         this.nextButton.addEventListener('click', () => this.next());
         this.prevButton.addEventListener('click', () => this.previous());
 
-        this.renderImage();
+        this.renderImage();  
     }
 
     renderImage() {
         const image = document.createElement('img');
         image.src = this.images[this.currentIndex].src;
         image.alt = this.images[this.currentIndex].title;
+         image.setAttribute('width', '1000'); 
+        image.setAttribute('height', '700');
         this.area.appendChild(image);
     }
 
