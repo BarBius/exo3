@@ -12,13 +12,15 @@ class Slider {
         this.nextButton.addEventListener('click', () => this.next());
         this.prevButton.addEventListener('click', () => this.previous());
 
-        this.renderImage();
+        this.renderImage();  
     }
 
     renderImage() {
         const image = document.createElement('img');
         image.src = this.images[this.currentIndex].src;
         image.alt = this.images[this.currentIndex].title;
+         image.setAttribute('width', '1000'); 
+        image.setAttribute('height', '700');
         this.area.appendChild(image);
     }
 
@@ -49,12 +51,12 @@ class Slider {
     }
 }
 const images = [
-    { src: 'images/1.jpg', title: 'A link to the Past' },
-    { src: 'images/2.jpg', title: 'Twilight princess' },
-    { src: 'images/3.jpg', title: 'Skyward Sword' },
-    { src: 'images/4.jpg', title: 'WindWaker' },
-    { src: 'images/5.jpg', title: 'Breath of the wild' },
-    { src: 'images/6.jpg', title: 'Link\'s awakening' },
+    { src: 'https://github.com/BarBius/exo3/blob/main/asset/deadpool.jpeg?raw=true', title: 'Deadpool' },
+    { src: 'https://github.com/BarBius/exo3/blob/main/asset/hulk.jpeg?raw=true', title: 'Hulk' },
+    { src: 'https://github.com/BarBius/exo3/blob/main/asset/iron-man.jpeg?raw=true', title: 'Iron-man' },
+    { src: 'https://github.com/BarBius/exo3/blob/main/asset/sider-man.jpeg?raw=true', title: 'spider-man' },
+    { src: 'https://github.com/BarBius/exo3/blob/main/asset/thor.jpeg?raw=true', title: 'Thor' },
+    { src: 'https://github.com/BarBius/exo3/blob/main/asset/captain-america.jpeg?raw=true', title: 'captain amerika' },
 ];
 const params = {
     images: images,
