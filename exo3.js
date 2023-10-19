@@ -49,12 +49,15 @@ class Slider {
     }
 }
 const images = [
-    { src: 'images/1.jpg', title: 'A link to the Past' },
-    { src: 'images/2.jpg', title: 'Twilight princess' },
-    { src: 'images/3.jpg', title: 'Skyward Sword' },
-    { src: 'images/4.jpg', title: 'WindWaker' },
-    { src: 'images/5.jpg', title: 'Breath of the wild' },
-    { src: 'images/6.jpg', title: 'Link\'s awakening' },
+    { src: 'asset/Marvel.jpeg', title: 'Affiche Marvel' },
+    { src: 'asset/black-panther.jpeg', title: 'Black-panther' },
+    { src: 'asset/captain-america.jpeg', title: 'Captain-america' },
+    { src: 'asset/deadpool.jpeg', title: 'Deadpool' },
+    { src: 'asset/doctor-strange.jpeg', title: 'Docteur-strange' },
+    { src: 'asset/hulk.jpeg', title: 'Hulk' },
+    { src: 'asset/iron-man.jpeg', title: 'Iron-man' },
+    { src: 'asset/spider-man.jpeg', title: 'Spider-man' },
+    { src: 'asset/Thor.jpeg', title: 'Thor' },
 ];
 const params = {
     images: images,
